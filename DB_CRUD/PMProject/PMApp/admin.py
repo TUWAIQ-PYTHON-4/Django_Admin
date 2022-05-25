@@ -11,8 +11,9 @@ class TaskAdmin(admin.ModelAdmin):
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    date_hierarchy = ('creation_time',)
+    date_hierarchy = 'creation_time'
 
 
 admin.site.register(Task, TaskAdmin)
-admin.site.register(Project)
+admin.site.register(Project, ProjectAdmin )
+
