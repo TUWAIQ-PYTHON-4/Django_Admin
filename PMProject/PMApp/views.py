@@ -1,5 +1,14 @@
+from django.shortcuts import render
+from PMApp.models import Task, Project
 
-from PMApp.models import Task
+
+def project(request):
+    proj= Project.objects.all()
+    project=[]
+    for P in proj:
+        project.append({'P':P})
+    context ={'project': project}
+    return render(request, "base.html", context)
 
 
 def lst():
