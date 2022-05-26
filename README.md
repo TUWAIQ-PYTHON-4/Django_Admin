@@ -11,3 +11,5 @@
 7. Customize admin page using list_filter.
 8. Customize admin page using date_hierarchy.
 9. Customize admin page using search_fields.
+
+Screenshoot has been uploaded
